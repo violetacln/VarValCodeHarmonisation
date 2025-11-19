@@ -5,4 +5,4 @@ The code (_correcting_px_files_pub.R_) relies on two preparatory steps:
 (i) the input created by the data scrapper [pxmap](https://github.com/hansharaldss/pxmap/) which consists of an overview of all variable names/values/codes found in all px-files published by Statistics Iceland
 (ii) a dictionary/database pairing (using the script _build_db_from_pxmap.R_) the unique, harmonised variable variable names/variable values/variable value codes with all possible ones found by the scrapper. The database is continuously improved and updated and it is not the object of the current repository.
 
-This work is part of a larger project (2023-GEOS-IS) and partly funded by Eurostat.
+This work is part of a larger project (101156693--2023-IS-GEOS) and partly funded by Eurostat.
