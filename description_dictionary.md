@@ -1,5 +1,5 @@
 
-The sql-database table containing all pairings between variable/values/codes found in px-tables and the harmonised ones has the following columns:
+The sql-database table containing all pairings (many-to-one) between variable/values/codes found in px-tables and the harmonised ones has the following columns:
 
 - name_var – variable names found in px-files
 
