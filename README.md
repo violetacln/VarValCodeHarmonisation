@@ -9,5 +9,5 @@ The code (_correcting_px_files_pub.R_) relies on two preparatory steps:
 
 This work is part of a larger project (101156693--2023-IS-GEOS) and partly funded by Eurostat.
 
-<img width="2314" height="795" alt="co-funded-by-eu" src="https://github.com/user-attachments/assets/d7ff569c-bd2e-4158-8069-3c96f570f7ea" />
+<img width="200" height="100" alt="co-funded-by-eu" src="https://github.com/user-attachments/assets/d7ff569c-bd2e-4158-8069-3c96f570f7ea" />
 
