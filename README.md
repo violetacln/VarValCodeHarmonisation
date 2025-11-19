@@ -8,3 +8,6 @@ The code (_correcting_px_files_pub.R_) relies on two preparatory steps:
 (ii) a dictionary/database (described in _description_dictionary.md_ and created using the script _build_db_from_pxmap.R_) which is pairing the unique, harmonised variable variable names/variable values/variable value codes with all possible ones found by the scrapper. The database is continuously improved and updated and it is not the object of the current repository.
 
 This work is part of a larger project (101156693--2023-IS-GEOS) and partly funded by Eurostat.
+
+<img width="2314" height="795" alt="co-funded-by-eu" src="https://github.com/user-attachments/assets/d7ff569c-bd2e-4158-8069-3c96f570f7ea" />
+
