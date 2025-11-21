@@ -106,31 +106,40 @@ for ( i in  1:dim(df_var_names)[1] ) {
       }
 
 
+## prepapring the new px-file -----------***----------
+# f_replace(data_frame, new, old)
+
+for (element in List_px_elements){
+  px_elements_new <- f_replace_harmon(df_var_map, harmon_name_var, original_name_var) %>%
+        f_replace(df_var_val_map, harmon_name_val, original_name_val) %>%
+        f_replace(df_var_val_codes_map, harmon_code_val, original_code_val)
+}
+
+## checking the elemnts ----------
 ## the element in the px-object about stubs
 #px_data$STUB
 
 ## the element in the px-pbject about headings
 #px_data$HEADING
-
 ## 
 #px_data$DATA
-
 ##
 #px_data$PRECISION
+##
+# px_data$ELIMINATION
+##
+#px_data$CODES
 
 
 # --- Part 2: write the harmonised px-file, starting from the px-object -------------------
+
 ## check whether the original px-object gives the correct original px-file:
 # write.px(px_data,  "/Users/.../ex_educ_px_writeTest.txt", 
 #          write.na = TRUE, write.zero = TRUE, fileEncoding = "UTF-8")
 
-
-###---or directly: --------------------------------
-## replace everywhere in the text-file the string S1 with string S2 (although rather risky?), e.g.:
-## modified_content <- gsub(string_to_replace, replacement_string, file_content, fixed = TRUE)
-## where S1 is any of the original variable_name, variable_values, variable_value_codes
-## and S2 is the harmonised pair of S1
-##------------------------------------
-
+## write the new px-file 
+px_data_new <- f(px_elements_new)
+ write.px(px_data_new,  "/Users/.../ex_educ_px_new_writeTest.txt", 
+          write.na = TRUE, write.zero = TRUE, fileEncoding = "UTF-8")
 
 
